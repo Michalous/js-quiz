@@ -127,6 +127,10 @@ li:nth-child(odd) {
   background-color: yellowgreen;
 }
 
+.answer-text.nopointer {
+  pointer-events: none;
+}
+
 #error {
   display: none;
 }

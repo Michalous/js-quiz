@@ -63,9 +63,17 @@ function clickOnQuestion() {
         ques.addEventListener('click', function() {
             if (ques.classList.contains('correct-answer')) {
                 ques.classList.add('correct')
+                // disable any subsequent clicks before new question is displayed
+                questionClicks.forEach((q) => {
+                    q.classList.add('nopointer')
+                })
                 score++
             } else {
                 ques.classList.add('wrong')
+                // disable any subsequent clicks before new question is displayed
+                questionClicks.forEach((q) => {
+                    q.classList.add('nopointer')
+                })
                 countDown -= 10
                 document.getElementsByClassName('correct-answer')[0].classList.add('wrong-correct')
             }
