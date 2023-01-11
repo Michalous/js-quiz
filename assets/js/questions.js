@@ -107,5 +107,103 @@ const questions = [
             "<!--This is comment-->": false,
             "'This is comment": false
         }
+    },
+    {
+        question: "How to insert a comment that has more than one line?",
+        answers: {
+            "/*This comment has\nmore than one line*/": true,
+            "<-- This comment has\nmore than one line -->": false,
+            "//This comment has\nmore than one line//": false
+        }
+    },
+    {
+        question: "What is the correct way to write a JavaScript array?",
+        answers: {
+            "var colors = [\"red\", \"greeen\", \"blue\"]": true,
+            "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")": false,
+            "var colors = \"red\", \"green\", \"blue\"": false,
+            "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")": false
+        }
+    },
+    {
+        question: "How do you round the number 7.25 to the nearest integer?",
+        answers: {
+            "Math.round(7.25)": true,
+            "rnd(7.25)": false,
+            "round(7.25)": false,
+            "Math.rnd(7.25)": false
+        }
+    },
+    {
+        question: "How do you find the number with the highest value of x and y?",
+        answers: {
+            "Math.max(x, y)": true,
+            "top(x, y)": false,
+            "Math.ceil(x, y)": false,
+            "ceil(x, y)": false
+        }
+    },
+    {
+        question: "What is the correct JavaScript syntax for opening a new window called \"w2\"?",
+        answers: {
+            "w2 = window.open(\"http://www/w3schools.com\");": true,
+            "w2 = window.new(\"http://www.w3schools.com\");": false
+        }
+    },
+    {
+        question: "JavaScript is the same as Java.",
+        answers: {
+            "False": true,
+            "True": false
+        }
+    },
+    {
+        question: "How can you detect the client's browser's name?",
+        answers: {
+            "navigator.appName": true,
+            "browser.name": false,
+            "client.navName": false
+        }
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        answers: {
+            "onclick": true,
+            "onchange": false,
+            "onmouseover": false,
+            "onmouseclick": false
+        }
+    },
+    {
+        question: "How do you declare a JavaScript variable?",
+        answers: {
+            "var carName;": true,
+            "v carName;": false,
+            "variable carName;": false
+        }
+    },
+    {
+        question: "Which operator is used to assign a value to a variable?",
+        answers: {
+            "=": true,
+            "*": false,
+            "-": false,
+            "x": false
+        }
+    },
+    {
+        question: "What will the following code return: Boolean(10 > 9)",
+        answers: {
+            "true": true,
+            "NaN": false,
+            "false": false
+        }
+    },
+    {
+        question: "Is JavaScript case-sensitive?",
+        answers: {
+            "Yes": true,
+            "No": false
+        }
     }
 ]
