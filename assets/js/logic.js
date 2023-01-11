@@ -17,6 +17,7 @@ var isGameOver = false // flag to stop interval running when all questions answe
 
 start_quiz.addEventListener('click', main) // starts the game when button clicked
 
+// function to start interval, checks if the game is over either because out of time or out of questions
 function main() {
     document.getElementById('start-screen').classList.add('hidden')
     questionsPanel.classList.remove('hide')
@@ -34,6 +35,7 @@ function main() {
     displayQuestion()
 }
 
+// function to display question and answers
 function displayQuestion() {
     if (questionNumber >= 25) {
         gameOver()
@@ -54,7 +56,7 @@ function displayQuestion() {
     }
 }
 
-// Don't forget to remove eventListener!
+// Function to deal with a click on answers
 function clickOnQuestion() {
     var questionClicks = document.querySelectorAll('.answer-text')
     questionClicks.forEach((ques) => {
@@ -73,6 +75,7 @@ function clickOnQuestion() {
     })
 }
 
+// sorts out the end game stage
 function gameOver() {
     isGameOver = true // countdown will stop when this is true
     questionsPanel.classList.add('hide')

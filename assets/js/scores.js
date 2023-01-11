@@ -20,6 +20,7 @@ clear.addEventListener('click', deleteScores) // delete scores when button press
 
 writeResults()
 
+// function to write sorted scores into DOM
 function writeResults() {
     var entries = sortEntries()
     highScoresDiv.innerHTML = ""
@@ -30,6 +31,7 @@ function writeResults() {
     }
 }
 
+// function to clear loacal storage
 function deleteScores() {
     localStorage.clear()
     writeResults()

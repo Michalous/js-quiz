@@ -1,3 +1,4 @@
+// JS object with questions and answers
 const questions = [
     {
         question: "Inside which HTML element do we put the JavaScript?",
