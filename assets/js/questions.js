@@ -2,9 +2,9 @@ const questions = [
     {
         question: "Inside which HTML element do we put the JavaScript?",
         answers: {
-            "<script>": true,
             "<js>": false,
             "<javascript>": false,
+            "<script>": true,
             "<scripting>": false
         } 
     },
@@ -20,16 +20,16 @@ const questions = [
     {
         question: "Where is the correct place to insert a JavaScript?",
         answers: {
-            "Both the <head> and the <body> section are correct": true,
             "The <head> section": false,
-            "The <body> section": false
+            "The <body> section": false,
+            "Both the <head> and the <body> section are correct": true
         }
     },
     {
         question: "What is the correct syntax for referring to an external script called \"xxx.js\"?",
         answers: {
-            "<script src=\"xxx.js\">": true,
             "<script href=\"xxx.js\">": false,
+            "<script src=\"xxx.js\">": true,
             "script name=\"xxx.js\">": false
         }
     },
@@ -43,8 +43,8 @@ const questions = [
     {
         question: "How do you write \"Hello World\" in an alert box?",
         answers: {
-            "alert(\"Hello World\");": true,
             "msgBox(\"Hello World\");": false,
+            "alert(\"Hello World\");": true,
             "alertBox(\"Hello World\");": false,
             "msg(\"Hello World\");": false
         }
@@ -52,35 +52,35 @@ const questions = [
     {
         question: "How do you create a function in JavaScript?",
         answers: {
-            "function myFunction()": true,
             "function:myFunction()": false,
-            "function = myFunction()": false
+            "function = myFunction()": false,
+            "function myFunction()": true
         }
     },
     {
         question: "How do you call a function named \"myFunction\"?",
         answers: {
-            "myFunction()": true,
             "call myFunction()": false,
+            "myFunction()": true,
             "call function myFunction()": false
         }
     },
     {
         question: "How to write an IF statement in JavaScript?",
         answers: {
-            "if (i == 5)": true,
             "if i == 5 then": false,
             "if i = 5 then": false,
+            "if (i == 5)": true,
             "if i = 5": false
         }
     },
     {
         question: "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
         answers: {
-            "if (i != 5)": true,
             "if i <> 5": false,
             "if (i <> 5)": false,
-            "if i =! 5 then": false
+            "if i =! 5 then": false,
+            "if (i != 5)": true
         }
     },
     {
@@ -94,8 +94,8 @@ const questions = [
     {
         question: "How does a FOR loop start?",
         answers: {
-            "for (i = 0; i <= 5; i++)": true,
             "for i = 1 to 5": false,
+            "for (i = 0; i <= 5; i++)": true,
             "for (i = 0; i <= 5)": false,
             "for (i <= 5; i++)": false
         }
@@ -103,9 +103,9 @@ const questions = [
     {
         question: "How can you add a comment in a JavaScript?",
         answers: {
-            "//This is comment": true,
             "<!--This is comment-->": false,
-            "'This is comment": false
+            "'This is comment": false,
+            "//This is comment": true
         }
     },
     {
@@ -119,19 +119,19 @@ const questions = [
     {
         question: "What is the correct way to write a JavaScript array?",
         answers: {
-            "var colors = [\"red\", \"greeen\", \"blue\"]": true,
             "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")": false,
             "var colors = \"red\", \"green\", \"blue\"": false,
+            "var colors = [\"red\", \"green\", \"blue\"]": true,
             "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")": false
         }
     },
     {
         question: "How do you round the number 7.25 to the nearest integer?",
         answers: {
-            "Math.round(7.25)": true,
             "rnd(7.25)": false,
             "round(7.25)": false,
-            "Math.rnd(7.25)": false
+            "Math.rnd(7.25)": false,
+            "Math.round(7.25)": true
         }
     },
     {
@@ -153,49 +153,49 @@ const questions = [
     {
         question: "JavaScript is the same as Java.",
         answers: {
-            "False": true,
-            "True": false
+            "True": false,
+            "False": true
         }
     },
     {
         question: "How can you detect the client's browser's name?",
         answers: {
-            "navigator.appName": true,
             "browser.name": false,
+            "navigator.appName": true,
             "client.navName": false
         }
     },
     {
         question: "Which event occurs when the user clicks on an HTML element?",
         answers: {
-            "onclick": true,
             "onchange": false,
             "onmouseover": false,
-            "onmouseclick": false
+            "onmouseclick": false,
+            "onclick": true
         }
     },
     {
         question: "How do you declare a JavaScript variable?",
         answers: {
-            "var carName;": true,
             "v carName;": false,
+            "var carName;": true,
             "variable carName;": false
         }
     },
     {
         question: "Which operator is used to assign a value to a variable?",
         answers: {
-            "=": true,
             "*": false,
             "-": false,
-            "x": false
+            "x": false,
+            "=": true
         }
     },
     {
         question: "What will the following code return: Boolean(10 > 9)",
         answers: {
-            "true": true,
             "NaN": false,
+            "true": true,
             "false": false
         }
     },

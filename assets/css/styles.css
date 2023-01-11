@@ -55,7 +55,9 @@ li:nth-child(odd) {
 
 .wrapper {
   margin: 100px auto 0 auto;
+  width: 80%;
   max-width: 600px;
+  padding: 20px;
 }
 
 .hide {
@@ -85,4 +87,51 @@ li:nth-child(odd) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+#start-screen.hidden {
+  display: none;
+}
+
+#question-title {
+  text-align: center;
+}
+
+.answer-text {
+  width: 100%;
+  background-color: navy;
+  color: aliceblue;
+  height: 50px;
+  margin: 5px;
+  padding: 25px 0px 0px 25px;
+  border-radius: 15px;
+}
+
+.answer-text:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.answer-text.correct {
+  background-color: green;
+}
+
+.answer-text.wrong {
+  background-color: red;
+  opacity: 1.0;
+}
+
+.answer-text.wrong-correct {
+  background-color: yellowgreen;
+}
+
+#error {
+  display: none;
+}
+
+#error.active {
+  display: block;
+  color: red;
 }
